@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+    color: rgb(92, 112, 141);
+    min-height: 100vh;
+}
+
+header{
+    font-size: 2rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- Todo Inputs ------------- */
+
+.todo-input, .todo-button{
+    padding: 0.5em;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+.todo-input{
+    min-width: 35%;
+}
+
+.todo-button{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todo-button:hover{
+    background-color: rgb(92, 112, 141);
+    color: white;
+}
+
+select{
+    appearance: none;
+    color: rgb(92, 112, 141);
+    border: none;
+    width: 15em;
+    cursor: pointer;  
+    padding: 2em;  
+}
+
+.select{
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: rgb(92, 112, 141);
+    color: white;
+    top: 0;
+    right: 0;
+    padding: 1.5em;
+    pointer-events: none;
+}
+
+
+/* -------------- Todo list ------------- */
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 35%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5em;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+.todo-item{
+    flex: 1;
+    padding-left: 0.1em;
+}
+
+.delete-btn, .complete-btn{
+    background-color: rgb(92, 112, 141);
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn:hover{
+    background-color: rgb(82, 162, 82);
+}
+
+.delete-btn:hover{
+    background-color: rgb(218, 58, 58);
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
