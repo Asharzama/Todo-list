@@ -122,3 +122,73 @@ select{
 .fa-trash, .fa-check{
     pointer-events: none;
 }
+
+/* -------------- Media Queries ------------- */
+
+@media (max-width: 730px){
+    *{
+        font-size: 62.5%;
+    }
+    header, form{
+        min-height: 10vh;
+    }
+    header{
+        font-size: 4rem;
+    }
+    form{
+        display: block;
+        margin: 0 4rem;
+    }
+    .todo-input{
+        min-width: 80%;
+    }
+    .select .filter-todo{
+        width: 47em;
+        padding: 5em;
+    }
+    .select::after{
+        display: none;
+    }
+    .filter-todo option{
+        height: 1em;
+    }
+    .todo-list{
+        min-width: 55%;
+    }
+}
+@media (max-width: 376px){
+    *{
+        font-size: 50%;
+    }
+    header, form{
+        min-height: 10vh;
+    }
+    header{
+        font-size: 4rem;
+    }
+    form{
+        display: block;
+        margin: 0 4rem;
+    }
+    .todo-input{
+        min-width: 80%;
+    }
+    .select .filter-todo{
+        width: 150em;
+        padding: 5em;
+    }
+    .select::after{
+        display: none;
+    }
+    .filter-todo option{
+        height: 1em;
+    }
+    .todo-list{
+        min-width: 55%;
+    }
+}
+@media (max-width: 300px){
+    .todo-button{
+        display: none;
+    }
+}
