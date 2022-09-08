@@ -35,6 +35,7 @@ header, form{
 
 .todo-input{
     min-width: 35%;
+    outline: none;
 }
 
 .todo-button{
@@ -73,6 +74,12 @@ select{
     pointer-events: none;
 }
 
+.alert{
+    margin-left: 20%;
+    visibility: hidden;
+    color: red;
+    font-size: 1.5rem;
+}
 
 /* -------------- Todo list ------------- */
 
@@ -98,11 +105,13 @@ select{
 }
 
 .todo-item{
+    outline: none;
     flex: 1;
     padding-left: 0.1em;
+    font-size: 1.5rem;
 }
 
-.delete-btn, .complete-btn{
+.delete-btn, .complete-btn, .edit-btn{
     background-color: rgb(92, 112, 141);
     color: white;
     border: none;
@@ -119,7 +128,7 @@ select{
     background-color: rgb(218, 58, 58);
 }
 
-.fa-trash, .fa-check{
+.fa-trash, .fa-check, .fa-pen-to-square{
     pointer-events: none;
 }
 
